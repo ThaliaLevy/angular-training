@@ -1,0 +1,21 @@
+[-] comentário que considero importante;
+[--] explicação ou incremento do comentário acima.
+
+INSTRUÇÕES INICIAIS:
+- 'ng new <nomeProjeto>' é usado para criar um projeto;
+- 'ng serve' roda o projeto, podendo ser visualizado no navegador (ctrl + click no link que é disponibilizado após carregar);
+- pasta 'app' é onde modificamos para mexer no projeto;
+- 'node_modules' não pode ser salvo no repositorio remoto. é necessário usar o comando 'npm install' toda vez que clonar o repositorio para uma maquina local;
+-- isso pode ser verificado no arquivo gitignore.
+
+COMPONENTES:
+- Angular (assim como outros frameworks como React, View) utiliza o reaproveitamento de componentes;
+- buscar criar os componentes através do comando 'ng generate component components/<nomeDoComponente>' pois há exportações que são criadas de forma automática
+no arquivo 'app.modules';
+- utilizando componentes:
+    1 - criar componente: ng generate component components/<nomeDoComponente> (dentro do projeto)
+    2 - pegar seletor: 'selector' dentro de '@Component' (dentro do arquivo TS do componente criado)
+    3 - colar dentro de uma tag no html
+    4 - resultado será exibir o conteúdo do componente naquele espaço do html.
+
+- seletores sempre terão 'app-' na frente;
