@@ -8,6 +8,9 @@ INSTRUÇÕES INICIAIS:
 - 'node_modules' não pode ser salvo no repositorio remoto. é necessário usar o comando 'npm install' toda vez que clonar o repositorio para uma maquina local;
 -- isso pode ser verificado no arquivo gitignore.
 
+GERAL:
+- condicionais devem ser realizadas na classe. evitar realizar no html.
+
 COMPONENTES:
 - Angular (assim como outros frameworks como React, View) utiliza o reaproveitamento de componentes;
 - buscar criar os componentes através do comando 'ng generate component components/<nomeDoComponente>' pois há exportações que são criadas de forma automática
