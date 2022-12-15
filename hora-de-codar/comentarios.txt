@@ -19,3 +19,4 @@ no arquivo 'app.modules';
     4 - resultado será exibir o conteúdo do componente naquele espaço do html.
 
 - seletores sempre terão 'app-' na frente;
+- é possível criar variaveis e métodos dentro da classe (no arquivo .ts do componente);
