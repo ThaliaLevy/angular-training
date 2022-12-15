@@ -20,3 +20,5 @@ no arquivo 'app.modules';
 
 - seletores sempre terão 'app-' na frente;
 - é possível criar variaveis e métodos dentro da classe (no arquivo .ts do componente);
+- para utilizar variaveis do escopo maior para o menor, é preciso inserir na classe de exportação ts do escopo menor o @Input() com a respectiva variavel;
+- caso a variavel não seja iniciada dentro da export, pode-se indicar que ela será "iniciada em breve" usando: ex. @Input() name!:String

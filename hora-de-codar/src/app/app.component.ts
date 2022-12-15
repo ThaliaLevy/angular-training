@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-horaDeCodar';
-  nome: String = "Thalia";
-  curso: String = "Ciência da computação";
+  nome: String = 'Thalia';
+  curso: String = 'Ciência da computação';
+  notas = {
+    nota: "10",
+    materia: "Algoritmos"
+  };
 }
