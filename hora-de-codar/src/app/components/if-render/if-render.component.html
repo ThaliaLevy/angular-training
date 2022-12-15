@@ -1,0 +1,14 @@
+<div class="marcadorDeAula">
+
+<!-- condicional com booleano-->
+<p *ngIf="mostrar">Aula 09!</p>
+
+<!-- condicional com valor-->
+<div *ngIf="personagem === 'Ash'; else personagemNotFound">O nome do personagem é Ash!</div>
+<!-- <ng-template> é o else-->
+<ng-template #personagemNotFound>
+    Personagem não encontrado!
+</ng-template>
+
+</div>
+
