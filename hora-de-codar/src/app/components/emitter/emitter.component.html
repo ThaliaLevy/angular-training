@@ -1,0 +1,7 @@
+<div class="marcadorDeAula">
+    <p>
+        <span>Número da aula: </span>
+        <span *ngIf="numeroAula != ''"> {{numeroAula}} </span>
+    </p>
+    <app-number (click)="onExibirNumero()"></app-number>
+</div>

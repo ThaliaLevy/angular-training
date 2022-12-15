@@ -6,6 +6,8 @@ import { FirstComponentComponent } from './components/first-component/first-comp
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EventsComponent } from './components/events/events.component';
+import { EmitterComponent } from './components/emitter/emitter.component';
+import { NumberComponent } from './components/number/number.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { EventsComponent } from './components/events/events.component';
     FirstComponentComponent,
     ParentDataComponent,
     IfRenderComponent,
-    EventsComponent
+    EventsComponent,
+    EmitterComponent,
+    NumberComponent
   ],
   imports: [
     BrowserModule
