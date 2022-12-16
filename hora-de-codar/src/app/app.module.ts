@@ -8,6 +8,7 @@ import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EventsComponent } from './components/events/events.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { NumberComponent } from './components/number/number.component';
+import { ListRenderComponent } from './components/list-render/list-render.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NumberComponent } from './components/number/number.component';
     IfRenderComponent,
     EventsComponent,
     EmitterComponent,
-    NumberComponent
+    NumberComponent,
+    ListRenderComponent
   ],
   imports: [
     BrowserModule
