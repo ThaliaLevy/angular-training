@@ -3,6 +3,8 @@
     <ul>
         <li *ngFor="let pokemon of pokemons">
             Nome: {{pokemon.nome}} - Tipo: {{pokemon.tipo}}
+            <button (click)="mostrarIdade(pokemon)">Mostrar idade - Aula 13 :)</button>
         </li>
     </ul>
+    <p>{{informacaoNivelPokemon}}</p>
 </div>
