@@ -14,6 +14,9 @@ GERAL:
 - EventEmitter é usado quando se quer utilizar uma função de um componente dentro de outro componente;
 - utilizar interface para centralizar código e evitar repetição. Também torna obrigatório seguir o padrão estabelecido na interface;
 - pipe operators: recursos para trabalhar com as strings nos templates;
+- é preciso importar, em app modules, o 'FormsModule' para que se possa fazer two way binding;
+-- não esquecer de acrescentar tb em imports no mesmo arquivo;
+
 
 COMPONENTES:
 - Angular (assim como outros frameworks como React, View) utiliza o reaproveitamento de componentes;
