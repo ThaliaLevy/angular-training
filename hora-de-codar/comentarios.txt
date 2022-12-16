@@ -12,7 +12,8 @@ GERAL:
 - condicionais devem ser realizadas na classe. evitar realizar no html;
 - Output: exportar código para outro componente;
 - EventEmitter é usado quando se quer utilizar uma função de um componente dentro de outro componente;
-- utilizar interface para centralizar código e evitar repetição. Também torna obrigatório seguir o padrão estabelecido na interface.
+- utilizar interface para centralizar código e evitar repetição. Também torna obrigatório seguir o padrão estabelecido na interface;
+- pipe operators: recursos para trabalhar com as strings nos templates;
 
 COMPONENTES:
 - Angular (assim como outros frameworks como React, View) utiliza o reaproveitamento de componentes;
