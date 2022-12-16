@@ -1,9 +1,10 @@
 <div class="marcadorDeAula">
-    <h2>Aula 12!</h2>
+    <h2>Aula 12! :)</h2>
     <ul>
         <li *ngFor="let pokemon of pokemons">
             Nome: {{pokemon.nome}} - Tipo: {{pokemon.tipo}}
-            <button (click)="mostrarIdade(pokemon)">Mostrar idade - Aula 13 :)</button>
+            <button (click)="mostrarIdade(pokemon)">Mostrar idade - Aula 13</button>
+            <button (click)="removerPokemon(pokemon)">Excluir - Aula 16</button>
         </li>
     </ul>
     <p>{{informacaoNivelPokemon}}</p>
