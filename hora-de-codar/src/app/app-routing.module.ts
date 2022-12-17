@@ -7,6 +7,7 @@ import { EventsComponent } from "./components/events/events.component";
 //importadas automaticamente ao declarar a const do bloco abaixo
 import { FirstComponentComponent } from "./components/first-component/first-component.component";
 import { IfRenderComponent } from "./components/if-render/if-render.component";
+import { ItemDetailComponent } from "./components/item-detail/item-detail.component";
 import { ListRenderComponent } from "./components/list-render/list-render.component";
 import { PipesComponent } from "./components/pipes/pipes.component";
 import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-binding.component";
@@ -17,6 +18,7 @@ const routes: Routes = [
     {path: 'events', component: EventsComponent},
     {path: 'emitter', component: EmitterComponent},
     {path: 'list-render', component: ListRenderComponent},
+    {path: 'list-render/:id', component: ItemDetailComponent},
     {path: 'pipes', component: PipesComponent},
     {path: 'binding', component: TwoWayBindingComponent}
 ];

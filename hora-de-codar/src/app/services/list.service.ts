@@ -23,4 +23,8 @@ export class ListService {
   getAll(): Observable<Pokemon[]> {
     return this.http.get<Pokemon[]>(this.apiUrl);
   }
+
+  getItem(id: number): Observable<Pokemon> {
+    return this.http.get<Pokemon>(`${this.apiUrl}/${id}`);
+  }
 }

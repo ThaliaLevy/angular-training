@@ -16,6 +16,7 @@ GERAL:
 - pipe operators: recursos para trabalhar com as strings nos templates;
 - é preciso importar, em app modules, o 'FormsModule' para que se possa fazer two way binding (att sem reload);
 -- não esquecer de acrescentar tb em imports no mesmo arquivo;
+- para indicar que um dado pode ser opcional, basta usar '?'. ex.: animal?: Animal;
 
 
 COMPONENTES:
