@@ -38,3 +38,10 @@ VARIAVEIS:
 SERVICES:
 - 'ng generate service services/<nomeDoService>' para criar um service;
 - para utilizar em um componente, deve-se importar o service na ts desse componente;
+
+HTTP:
+- necessário arquivo db.json dentro do projeto (nele coloca-se o json);
+- importar no app.modules.ts o HttpClientModule (na mão: import { HttpClientModule } from '@angular/common/http');
+- em 'scripts' no arquivo package.json inserir "server": "json-server --watch db.json";
+-- para rodar o servidor na porta 3000 (que mostra o json do db.json);
+-- comando para rodar o servidor: npm run server;

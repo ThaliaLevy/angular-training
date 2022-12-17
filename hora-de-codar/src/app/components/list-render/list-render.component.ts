@@ -10,7 +10,9 @@ import { ListService } from 'src/app/services/list.service';
 
 export class ListRenderComponent {
   // é como se fosse uma injeção de dependencia do java
-  constructor(private listService: ListService) {}
+  constructor(private listService: ListService) {
+    this.getPokemons();
+  }
 
   /* ANTES
   
@@ -28,11 +30,14 @@ export class ListRenderComponent {
     this.informacaoNivelPokemon = `Nível do pokemon ${pokemon.nome} é ${pokemon.nivel}`;
   }
 
-  pokemons: Pokemon[] = [
-    { nome: 'pikachu', tipo: 'elétrico', nivel: 10 },
-    { nome: 'roselia', tipo: 'planta', nivel: 4 },
-    { nome: 'vulpix', tipo: 'fogo', nivel: 7 }
-  ]
+  pokemons: Pokemon[] = [];
+
+  getPokemons(): void {
+    /* Forma errada: this.pokemons = this.listService.getAll();
+     pois não é possível atribuir valor quando se usa o Observable (no service)
+     Forma correta: */
+    this.listService.getAll().subscribe((pokemons) => (this.pokemons = pokemons));
+  }
 
   removerPokemon(pokemon: Pokemon) {
     //this.pokemons está pegando a lista atualizada
