@@ -1,14 +1,34 @@
-<div class="marcadorDeAula">
-<h1>Hello, aula 01</h1>
-<p>p fora do escopo não fica vermelho</p>
-<p>Meu nome é {{nome}}, faço curso de {{curso}}</p>
-</div>
+<header>
+    <nav>
+        <a routerLink="/first">02</a><br>
+        <a routerLink="/if-render">09</a><br>
+        <a routerLink="/events">10</a><br>
+        <a routerLink="/emitter">11</a><br>
+        <a routerLink="/list-render">12-13-16</a><br>
+        <a routerLink="/pipes">14</a><br>
+        <a routerLink="/binding">15</a><br>
+    </nav>
+</header>
+<router-outlet>
 
-<app-first-component></app-first-component>
-<app-parent-data [nomeNoComponente]="nome" [cursoNoComponente]="curso" [notas]="notas"></app-parent-data> 
-<app-if-render></app-if-render>
-<app-events></app-events>
-<app-emitter></app-emitter>
-<app-list-render></app-list-render>
-<app-pipes></app-pipes>
-<app-two-way-binding></app-two-way-binding>
+</router-outlet>
+<footer>
+
+</footer>
+
+<!--
+    <div class="marcadorDeAula">
+    <h1>Hello, aula 01</h1>
+    <p>p fora do escopo não fica vermelho</p>
+    <p>Meu nome é {{nome}}, faço curso de {{curso}}</p>
+    </div>
+  
+    <app-first-component></app-first-component>
+    <app-parent-data [nomeNoComponente]="nome" [cursoNoComponente]="curso" [notas]="notas"></app-parent-data> 
+    <app-if-render></app-if-render>
+    <app-events></app-events>
+    <app-emitter></app-emitter>
+    <app-list-render></app-list-render>
+    <app-pipes></app-pipes>
+    <app-two-way-binding></app-two-way-binding>
+-->
