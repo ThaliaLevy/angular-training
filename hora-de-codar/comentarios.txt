@@ -1,6 +1,8 @@
 [-] comentário que considero importante;
 [--] explicação ou incremento do comentário acima.
 
+obs.: o projeto backend com o qual esse front integra roda com o comando 'node ace migration:run'
+
 INSTRUÇÕES INICIAIS:
 - 'ng new <nomeProjeto>' é usado para criar um projeto;
 - 'ng serve' roda o projeto, podendo ser visualizado no navegador (ctrl + click no link que é disponibilizado após carregar);

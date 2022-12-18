@@ -13,9 +13,8 @@ export class ListService {
   //necessário passar pelo construtor para que se tenha acesso aos metodos do http
   constructor(private http: HttpClient) { }
 
-  remover(pokemons: Pokemon[], pokemon: Pokemon){
-    //remove um pokemon se nome igual ao passado, os outros continuam
-    return pokemons.filter((a) => pokemon.nome !== a.nome);
+  remover(id: number) {
+    return this.http.delete<Pokemon>(`${this.apiUrl}/${id}`)
   }
 
   private apiUrl = 'http://localhost:3000/pokemons';

@@ -11,12 +11,6 @@
       "nome": "roselia",
       "tipo": "planta",
       "nivel": 10
-    },
-    {
-      "id": 3,
-      "nome": "vulpix",
-      "tipo": "fogo",
-      "nivel": 11
     }
   ]
 }

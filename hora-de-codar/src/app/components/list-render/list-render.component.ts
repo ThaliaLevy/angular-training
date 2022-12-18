@@ -40,8 +40,10 @@ export class ListRenderComponent {
   }
 
   removerPokemon(pokemon: Pokemon) {
-    //this.pokemons está pegando a lista atualizada
-    this.pokemons = this.listService.remover(this.pokemons, pokemon);
+    //exclusão do front
+    this.pokemons = this.pokemons.filter((a) => pokemon.nome !== a.nome);
+    //exclusão na tabela
+    this.listService.remover(pokemon.id).subscribe();
   }
 }
 
