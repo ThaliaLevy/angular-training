@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
   selector: 'app-new-moment',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./new-moment.component.css']
 })
 export class NewMomentComponent {
-
+  btnText = "Compartilhar";
 }
