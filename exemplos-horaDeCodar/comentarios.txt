@@ -9,6 +9,7 @@ INSTRUÇÕES INICIAIS:
 - pasta 'app' é onde modificamos para mexer no projeto;
 - 'node_modules' não pode ser salvo no repositorio remoto. é necessário usar o comando 'npm install' toda vez que clonar o repositorio para uma maquina local;
 -- isso pode ser verificado no arquivo gitignore.
+- instalar biblioteca de icones: 'ng add @fortawesome/angular-fontawesome' 
 
 GERAL:
 - condicionais devem ser realizadas na classe. evitar realizar no html;
