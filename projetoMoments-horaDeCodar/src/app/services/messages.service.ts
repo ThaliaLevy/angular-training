@@ -4,6 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class MessagesService {
+  //exibe mensagem na tela se eu preencher algo
+  message: string = '';
 
   constructor() { }
 }
