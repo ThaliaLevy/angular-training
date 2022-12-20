@@ -1,7 +1,7 @@
 [-] comentário que considero importante;
 [--] explicação ou incremento do comentário acima.
 
-obs.: o projeto backend com o qual esse front integra roda com o comando 'node ace migration:run'
+obs.: o projeto backend com o qual esse front integra roda com o comando 'node ace serve'
 
 INSTRUÇÕES INICIAIS:
 - 'ng new <nomeProjeto>' é usado para criar um projeto;
