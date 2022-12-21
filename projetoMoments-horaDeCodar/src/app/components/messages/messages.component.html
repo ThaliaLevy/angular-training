@@ -1,7 +1,8 @@
 <div class="message" *ngIf="messagesService.message">
     <div class="message-header">
         <h2>Mensagem do sistema:</h2>
-        <button>
+        <!-- clear serve para aceitar que se feche o modal ao clicar no x (se apagar não funciona) -->
+        <button class="clear" (click)="messagesService.clear()">
             <fa-icon [icon]="faTimes"></fa-icon>
         </button>
     </div>
