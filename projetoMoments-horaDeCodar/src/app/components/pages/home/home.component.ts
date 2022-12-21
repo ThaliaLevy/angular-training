@@ -17,7 +17,11 @@ export class HomeComponent {
   moments: Moment[] = [];   //filtro para ser exibido depois da busca
   baseApiUrl = environment.baseApiUrl;
 
-  constructor(private momentService: MomentService){ }
+  //ativa o icone de lupa
+  faSearch = faSearch;
+  searchTerm: string = '';
+
+  constructor(private momentService: MomentService) { }
 
   ngOnInit(): void {
     this.momentService.getMoments().subscribe((items) => {
@@ -31,5 +35,15 @@ export class HomeComponent {
       this.allMoments = data;
       this.moments = data;
     })
+  }
+
+  search(e: Event): void {
+    //as duas linhas abaixo são para pegar o valor da input (que chama essa função)
+    const target = e.target as HTMLInputElement;
+    const value = target.value;
+
+    this.moments = this.allMoments.filter((moment) =>
+      moment.title.toLowerCase().includes(value)  //converter para minusculo (toLowerCase) e verifica se texto está contido (com includes)
+    );
   }
 }
