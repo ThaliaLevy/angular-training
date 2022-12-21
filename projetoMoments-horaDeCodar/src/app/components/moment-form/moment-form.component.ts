@@ -12,6 +12,7 @@ import { Moment } from 'src/app/Moment';
 export class MomentFormComponent {
   @Output()  onSubmit = new EventEmitter<Moment>;
   @Input() btnText!: string;
+  @Input() momentData: Moment | null = null;
 
   momentForm!: FormGroup;
 
