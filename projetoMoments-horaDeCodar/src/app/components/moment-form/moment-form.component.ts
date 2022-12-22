@@ -19,9 +19,9 @@ export class MomentFormComponent {
   //usado para inicializar coisas do Angular (por isso não é pelo constructor)
   ngOnInit(): void {
     this.momentForm = new FormGroup({
-      id: new FormControl(''),
-      title: new FormControl('', [Validators.required]),  //garante que esse campo é obrigatório
-      description: new FormControl('', [Validators.required]),
+      id: new FormControl(this.momentData ? this.momentData.id : ''),
+      title: new FormControl(this.momentData ? this.momentData.title : '', [Validators.required]),  //garante que esse campo é obrigatório
+      description: new FormControl(this.momentData ? this.momentData.description : '', [Validators.required]),
       image: new FormControl('')
     });
   }
