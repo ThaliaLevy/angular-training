@@ -30,8 +30,8 @@ export class EditMomentComponent {
 
     const formData = new FormData();
 
-    formData.append('title',momentData.title);
-    formData.append('description',momentData.description);
+    formData.append('title', momentData.title);
+    formData.append('description', momentData.description);
 
     if (momentData.image) {
       formData.append('image', momentData.image);
