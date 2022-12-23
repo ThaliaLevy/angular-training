@@ -27,7 +27,7 @@ import { EditMomentComponent } from './components/pages/edit-moment/edit-moment.
     MomentFormComponent,
     MessagesComponent,
     MomentComponent,
-    EditMomentComponent
+    EditMomentComponent,
   ],
   imports: [
     BrowserModule,
